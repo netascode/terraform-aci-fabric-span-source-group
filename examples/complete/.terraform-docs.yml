@@ -3,7 +3,7 @@ version: '>= 0.14.0'
 formatter: markdown table
 
 content: |-
-  # Scaffolding Example
+  # Terraform ACI Fabric SPAN Source Group Module
 
   To run this example you need to execute:
 
