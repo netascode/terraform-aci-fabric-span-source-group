@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-[![Tests](https://github.com/netascode/terraform-aci-scaffolding/actions/workflows/test.yml/badge.svg)](https://github.com/netascode/terraform-aci-scaffolding/actions/workflows/test.yml)
+[![Tests](https://github.com/netascode/terraform-aci-fabric-span-source-group/actions/workflows/test.yml/badge.svg)](https://github.com/netascode/terraform-aci-fabric-span-source-group/actions/workflows/test.yml)
 
 # Terraform ACI Fabric SPAN Source Group Module
 

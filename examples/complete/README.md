@@ -1,5 +1,5 @@
 <!-- BEGIN_TF_DOCS -->
-# Terraform ACI Fabric SPAN Source Group Module
+# Terraform ACI Fabric SPAN Source Group Module Example
 
 To run this example you need to execute:
 
