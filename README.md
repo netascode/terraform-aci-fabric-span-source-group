@@ -47,10 +47,8 @@ module "aci-fabric-span-source-group" {
       ]
     }
   ]
-  destination = {
-    name        = "DESTINATION1"
-    description = "My Destination"
-  }
+  destination_name        = "DESTINATION1"
+  destination_description = "My Destination"
 }
 ```
 
