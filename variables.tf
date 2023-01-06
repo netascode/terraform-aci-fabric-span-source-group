@@ -38,7 +38,7 @@ variable "sources" {
     fabric_paths = optional(list(object({
       node_id = number
       pod_id  = optional(number, 1)
-      port    = optional(number)
+      port    = number
       module  = optional(number, 1)
     })), [])
   }))
