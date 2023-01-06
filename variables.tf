@@ -26,7 +26,7 @@ variable "admin_state" {
 }
 
 variable "sources" {
-  description = "List of SPAN sources. Choices `direction`: `in`, `both`, `out`. Default value `direction`: `both`. Choices `span_drop`: `false`, `true`. Default value `span_drop`: `false`. List of Fabric Paths `fabric_paths`. Allowed values `node_id`: `1` - `4000`. Allowed values `pod_id`: `1` - `255`. Default value `pod_id`: `1`. Allowed values `port`: `1` - `127`. Allowed values `module`: `1` - `9`. Default value `module`: `1`."
+  description = "List of SPAN sources. Choices `direction`: `in`, `both`, `out`. Default value `direction`: `both`. Default value `span_drop`: `false`. Allowed values `node_id`: `1` - `4000`. Allowed values `pod_id`: `1` - `255`. Default value `pod_id`: `1`. Allowed values `port`: `1` - `127`. Allowed values `module`: `1` - `9`. Default value `module`: `1`."
   type = list(object({
     description   = optional(string, "")
     name          = string

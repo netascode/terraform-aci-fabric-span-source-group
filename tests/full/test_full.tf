@@ -43,7 +43,7 @@ module "main" {
 }
 
 data "aci_rest_managed" "spanSrcGrp" {
-  dn         = "uni/infra/srcgrp-TEST_FULL"
+  dn         = "uni/fabric/srcgrp-TEST_FULL"
   depends_on = [module.main]
 }
 
@@ -113,7 +113,7 @@ resource "test_assertions" "spanRsSrcToPathEp_port" {
   equal "tDn" {
     description = "tDn"
     got         = data.aci_rest_managed.spanRsSrcToPathEp_port.content.tDn
-    want        = "topology/pod-1/paths-101/extpaths-101/pathep-[eth1/49]"
+    want        = "topology/pod-1/paths-101/pathep-[eth1/49]"
   }
 }
 
@@ -167,7 +167,7 @@ resource "test_assertions" "spanSrc2" {
 }
 
 data "aci_rest_managed" "spanRsSrcToBD" {
-  dn         = "${data.aci_rest_managed.spanSrc1.id}/rssrcToBD"
+  dn         = "${data.aci_rest_managed.spanSrc2.id}/rssrcToBD"
   depends_on = [module.main]
 }
 

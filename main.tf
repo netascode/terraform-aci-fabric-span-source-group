@@ -13,12 +13,12 @@ locals {
 }
 
 resource "aci_rest_managed" "spanSrcGrp" {
-  dn         = "uni/fabric/srcgr-${var.name}"
+  dn         = "uni/fabric/srcgrp-${var.name}"
   class_name = "spanSrcGrp"
   content = {
     name    = var.name
     descr   = var.description
-    adminSt = var.admin_state
+    adminSt = var.admin_state ? "enabled" : "disabled"
   }
 }
 
